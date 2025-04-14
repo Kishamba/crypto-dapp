@@ -213,7 +213,8 @@ document.body.appendChild(buttonsBlock);
 
 // Пример логики по клику (можно заменить позже)
 document.getElementById('analyze-btn').addEventListener('click', () => {
-  alert('Здесь будет анализ...');
+  const coinSymbol = currentSymbol.replace('USDT', '');
+  window.location.href = `analysis.html?symbol=${coinSymbol}`;
 });
 
 document.getElementById('trade-btn').addEventListener('click', () => {
